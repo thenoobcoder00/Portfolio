@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>NEO PORTFOLIO | Alex Johnson</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+  <div class="custom-cursor"></div>
+  <nav class="neon-nav">
+    <div class="nav-brand">✦ ALEX JOHNSON</div>
+    <div class="nav-links">
+      <a href="#home" class="nav-link">হোম</a>
+      <a href="#work" class="nav-link">ওয়ার্ক</a>
+      <a href="#skills" class="nav-link">দক্ষতা</a>
+      <a href="#contact" class="nav-link">যোগাযোগ</a>
+    </div>
+    <button class="dark-toggle" id="darkToggle"><i class="fas fa-adjust"></i></button>
+  </nav>
+
+  <main>
+    <!-- Hero Section : অ্যাসিমেট্রিক, বোল্ড টাইপ -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-left">
+          <div class="hero-glow-text">DEVELOPER + DESIGNER</div>
+          <h1 class="hero-title">
+            <span class="outline-text">CREATE</span><br>
+            THE <span class="neon-text">FUTURE</span>
+          </h1>
+          <div class="hero-desc">
+            আমি এলেক্স জনসন — আর্কিটেক্ট অব ডিজিটাল ইমার্শন। মিনিমালিস্টিক কোড, ম্যাক্সিমালিস্ট ইমপ্যাক্ট।
+          </div>
+          <div class="hero-buttons">
+            <a href="#work" class="btn-primary">Explore Work <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="btn-ghost" id="cvBtn">Download CV <i class="fas fa-download"></i></a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="floating-card">
+            <div class="stat-number">5+</div>
+            <div>বছর অভিজ্ঞতা</div>
+            <div class="stat-number">24+</div>
+            <div>প্রজেক্ট লাইভ</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">SCROLL ↓</div>
+    </section>
+
+    <!-- Work Section : আধুনিক ম্যাগাজিন স্টাইল -->
+    <section id="work" class="work">
+      <div class="container">
+        <div class="section-tag">—— SELECTED WORK</div>
+        <h2 class="section-title">প্রজেক্ট <span class="neon-text">গ্যালারি</span></h2>
+        <div class="work-grid">
+          <div class="work-item big">
+            <div class="work-img" style="background-image: url('https://picsum.photos/id/20/800/600');"></div>
+            <div class="work-overlay">
+              <h3>AI অ্যানালিটিক্স ড্যাশবোর্ড</h3>
+              <p>React, D3, WebSocket — রিয়েল টাইম ডাটা ভিজুয়ালাইজেশন</p>
+              <div class="work-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div>
+            </div>
+          </div>
+          <div class="work-item">
+            <div class="work-img" style="background-image: url('https://picsum.photos/id/26/600/400');"></div>
+            <div class="work-overlay"><h3>ইকোশপ মার্কেটপ্লেস</h3><p>Next.js + Stripe</p><div class="work-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div>
+          </div>
+          <div class="work-item">
+            <div class="work-img" style="background-image: url('https://picsum.photos/id/37/600/400');"></div>
+            <div class="work-overlay"><h3>পোর্টফোলিও বিল্ডার</h3><p>Vue 3, Pinia, Tailwind</p><div class="work-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div>
+          </div>
+          <div class="work-item">
+            <div class="work-img" style="background-image: url('https://picsum.photos/id/59/600/400');"></div>
+            <div class="work-overlay"><h3>টাস্কফ্লো প্রো</h3><p>React + Firebase</p><div class="work-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div>
+          </div>
+          <div class="work-item">
+            <div class="work-img" style="background-image: url('https://picsum.photos/id/91/600/400');"></div>
+            <div class="work-overlay"><h3>ওয়েদারলি অ্যাপ</h3><p>JavaScript, OpenWeather API</p><div class="work-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div>
+          </div>
+          <div class="work-item">
+            <div class="work-img" style="background-image: url('https://picsum.photos/id/166/600/400');"></div>
+            <div class="work-overlay"><h3>ফুডি ব্লগ CMS</h3><p>Next.js + Sanity</p><div class="work-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills + Services Hybrid Section -->
+    <section id="skills" class="skills-services">
+      <div class="container">
+        <div class="section-tag">—— EXPERTISE AREAS</div>
+        <div class="hybrid-grid">
+          <div class="skill-block">
+            <h3><i class="fas fa-code"></i> ফ্রন্টএন্ড আর্কিটেকচার</h3>
+            <div class="skill-bar"><span>React/Next.js</span><div class="bar"><div style="width: 92%"></div></div></div>
+            <div class="skill-bar"><span>TypeScript</span><div class="bar"><div style="width: 88%"></div></div></div>
+            <div class="skill-bar"><span>Tailwind / Framer</span><div class="bar"><div style="width: 95%"></div></div></div>
+          </div>
+          <div class="service-block">
+            <h3><i class="fas fa-cogs"></i> সেবা সমূহ</h3>
+            <ul>
+              <li><i class="fas fa-globe"></i> ওয়েব ডেভেলপমেন্ট (ওয়েব ৩.০ রেডি)</li>
+              <li><i class="fas fa-paintbrush"></i> UI/UX ডিজাইন & প্রোটোটাইপিং</li>
+              <li><i class="fas fa-chart-line"></i> পারফরম্যান্স অপটিমাইজেশন (লাইটহাউস ৯৫+)</li>
+              <li><i class="fas fa-rocket"></i> ফুল-স্ট্যাক কনসালটিং</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience : টাইমলাইন নিউ ভিজুয়াল -->
+    <section class="timeline-section">
+      <div class="container">
+        <div class="section-tag">—— ROADMAP</div>
+        <h2 class="section-title">কর্মজীবন <span class="neon-text">ইতিহাস</span></h2>
+        <div class="timeline-neo">
+          <div class="timeline-item-neo"><div class="year">2022-বর্তমান</div><div class="desc"><strong>সিনিয়র ফ্রন্টএন্ড ডেভেলপার</strong> @ টেককর্প — ডিজাইন সিস্টেম লিড, ৪০% পারফরম্যান্স বুস্ট</div></div>
+          <div class="timeline-item-neo"><div class="year">2019-2022</div><div class="desc"><strong>UI ইঞ্জিনিয়ার</strong> @ স্টুডিওক্রিয়েটিভ — ১০+ ক্লায়েন্টের জন্য কম্পোনেন্ট লাইব্রেরি</div></div>
+          <div class="timeline-item-neo"><div class="year">2015-2019</div><div class="desc"><strong>বিএসসি ইন সিএসই</strong> @ টেক ইউনিভার্সিটি — কাম লাউড, এইচসিআই বিশেষায়িত</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials : মিনিমাল কার্ড -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-tag">—— WHAT CLIENTS SAY</div>
+        <div class="testimonial-grid">
+          <div class="testimonial"><i class="fas fa-quote-left"></i><p>এলেক্সের কাজের গুণমান ও গতিতে আমি মুগ্ধ। তিনি শুধু কোড লেখেন না, তিনি ভিজুয়াল গল্প বলেন।</p><h4>— সারাহ চেন, প্রোডাক্ট লিড</h4></div>
+          <div class="testimonial"><i class="fas fa-quote-left"></i><p>আমাদের প্ল্যাটফর্মের ট্রাফিক ৩ গুণ বেড়েছে ইউআই রিডিজাইনের পর। অসাধারণ!</p><h4>— মার্কাস টেইলর, সিটিও</h4></div>
+          <div class="testimonial"><i class="fas fa-quote-left"></i><p>ব্র্যান্ডের জন্য সেরা সিদ্ধান্ত ছিল এলেক্সকে নিয়োগ করা। ১০০% রেকমেন্ডেড।</p><h4>— জেসমিন রিভেরা, ফাউন্ডার</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact : আসল ভিন্ন ফর্ম -->
+    <section id="contact" class="contact-futuristic">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-left">
+            <h3>লেটস <span class="neon-text">কানেক্ট</span></h3>
+            <p>একটি প্রজেক্ট আইডিয়া আছে? অথবা শুধু হ্যালো বলতে চান? — আমি ২৪ ঘণ্টার মধ্যে রিপ্লাই দেই।</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <div class="direct-email"><i class="fas fa-envelope"></i> alex@neoportfolio.com</div>
+          </div>
+          <div class="contact-right">
+            <form id="modernForm">
+              <input type="text" placeholder="আপনার নাম" required>
+              <input type="email" placeholder="ইমেইল" required>
+              <textarea rows="4" placeholder="মেসেজ লিখুন..."></textarea>
+              <button type="submit" class="btn-primary full">পাঠিয়ে দিন →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">© ২০২৫ ALEX JOHNSON — নিওন ওয়ার্কস | বিল্ট উইথ ফিউচারিস্টিক ভাইব</div>
+  </footer>
+  <div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
