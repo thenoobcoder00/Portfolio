@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>The noob coder | মোবাইল-ফ্রেন্ডলি পোর্টফোলিও</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav class="mobile-nav">
+    <div class="logo">✦ NOOBXVAU</div>
+    <div class="menu-icon" id="menuToggle"><i class="fas fa-bars"></i></div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home">হোম</a></li>
+      <li><a href="#about">পরিচয়</a></li>
+      <li><a href="#skills">দক্ষতা</a></li>
+      <li><a href="#projects">প্রজেক্ট</a></li>
+      <li><a href="#contact">যোগাযোগ</a></li>
+      <li><button class="dark-toggle-mobile" id="darkToggleMobile"><i class="fas fa-moon"></i></button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Hero : মোবাইলে বড় বাটন, সহজ পাঠ্য -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-badge">✨ ওয়েব ডেভেলপার & UI ডিজাইনার</div>
+        <h1>আমি <span class="highlight">এলেক্স জনসন</span></h1>
+        <p class="hero-desc">আধুনিক, দ্রুত ও রেস্পন্সিভ ডিজিটাল অভিজ্ঞতা তৈরি করি।</p>
+        <div class="btn-group">
+          <a href="#contact" class="btn-primary">Hire Me <i class="fas fa-arrow-right"></i></a>
+          <a href="#" id="cvDownload" class="btn-outline">Download CV</a>
+        </div>
+        <div class="stats-row">
+          <div><span>৫+</span> বছর</div>
+          <div><span>২৪+</span> প্রজেক্ট</div>
+          <div><span>১০০%</span> সন্তুষ্টি</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About : মোবাইলে কলাম -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">আমার <span class="highlight">পরিচয়</span></h2>
+        <div class="about-card">
+          <p>আমি একজন সিনিয়র ফ্রন্টএন্ড ডেভেলপার, ৫ বছরের বেশি অভিজ্ঞতা নিয়ে ফরচুন ৫০০ কোম্পানি ও স্টার্টআপের সাথে কাজ করেছি। মিনিমাল ডিজাইন, পারফরম্যান্ট কোড এবং ইউজার এক্সপেরিয়েন্স আমার প্রাধান্য।</p>
+          <div class="info-row"><i class="fas fa-map-marker-alt"></i> সান ফ্রান্সিসকো (রিমোট)</div>
+          <div class="info-row"><i class="fas fa-certificate"></i> Google UX, Meta Frontend</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills : মোবাইলে প্রগ্রেস বার সহজ -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">দক্ষতা<span class="highlight"> সমূহ</span></h2>
+        <div class="skills-grid">
+          <div class="skill-cat">
+            <h3><i class="fab fa-react"></i> ফ্রন্টএন্ড</h3>
+            <div class="skill-item"><span>React/Next.js</span><div class="progress-bar"><div class="progress-fill" data-width="92"></div></div><span>92%</span></div>
+            <div class="skill-item"><span>TypeScript</span><div class="progress-bar"><div class="progress-fill" data-width="88"></div></div><span>88%</span></div>
+            <div class="skill-item"><span>Tailwind/CSS3</span><div class="progress-bar"><div class="progress-fill" data-width="95"></div></div><span>95%</span></div>
+          </div>
+          <div class="skill-cat">
+            <h3><i class="fas fa-server"></i> ব্যাকএন্ড</h3>
+            <div class="skill-item"><span>Node.js</span><div class="progress-bar"><div class="progress-fill" data-width="80"></div></div><span>80%</span></div>
+            <div class="skill-item"><span>Python/Flask</span><div class="progress-bar"><div class="progress-fill" data-width="75"></div></div><span>75%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects : মোবাইলে ২ কলাম গ্রিড, সহজ ট্যাপ -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">সাম্প্রতিক <span class="highlight">প্রজেক্ট</span></h2>
+        <div class="projects-grid">
+          <div class="project-card"><div class="project-img" style="background-image: url('https://picsum.photos/id/20/400/250');"></div><div class="project-info"><h3>AI অ্যানালিটিক্স</h3><p>React, D3.js</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div></div>
+          <div class="project-card"><div class="project-img" style="background-image: url('https://picsum.photos/id/26/400/250');"></div><div class="project-info"><h3>ইকোশপ</h3><p>Next.js, Stripe</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div></div>
+          <div class="project-card"><div class="project-img" style="background-image: url('https://picsum.photos/id/37/400/250');"></div><div class="project-info"><h3>পোর্টফোলিও বিল্ডার</h3><p>Vue 3, Tailwind</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div></div>
+          <div class="project-card"><div class="project-img" style="background-image: url('https://picsum.photos/id/59/400/250');"></div><div class="project-info"><h3>টাস্কফ্লো</h3><p>React, Firebase</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div></div>
+          <div class="project-card"><div class="project-img" style="background-image: url('https://picsum.photos/id/91/400/250');"></div><div class="project-info"><h3>ওয়েদারলি</h3><p>JS, OpenWeather</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div></div>
+          <div class="project-card"><div class="project-img" style="background-image: url('https://picsum.photos/id/166/400/250');"></div><div class="project-info"><h3>ফুডি ব্লগ</h3><p>Next.js, Sanity</p><div class="project-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-external-link-alt"></i></a></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services : মোবাইলে স্লাইডিং না, সোজা কার্ড -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">সেবা<span class="highlight"> সমূহ</span></h2>
+        <div class="services-grid">
+          <div class="service-card"><i class="fas fa-laptop-code"></i><h3>ওয়েব ডেভ</h3><p>ফুলি রেস্পন্সিভ ওয়েবসাইট</p></div>
+          <div class="service-card"><i class="fas fa-paintbrush"></i><h3>UI/UX ডিজাইন</h3><p>ইউজার সেন্টারিক ডিজাইন</p></div>
+          <div class="service-card"><i class="fas fa-chart-line"></i><h3>পারফরম্যান্স</h3><p>লাইটহাউস ৯৫+ স্কোর</p></div>
+          <div class="service-card"><i class="fas fa-headset"></i><h3>কনসালটিং</h3><p>টেকনিক্যাল গাইডলাইন</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience : টাইমলাইন মোবাইলে স্ট্যাক -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">কর্মজীবন<span class="highlight"> ও শিক্ষা</span></h2>
+        <div class="timeline">
+          <div class="timeline-item"><div class="year">২০২২-বর্তমান</div><div><strong>সিনিয়র ফ্রন্টএন্ড ডেভেলপার</strong><br>টেককর্প</div></div>
+          <div class="timeline-item"><div class="year">২০১৯-২০২২</div><div><strong>UI ইঞ্জিনিয়ার</strong><br>স্টুডিওক্রিয়েটিভ</div></div>
+          <div class="timeline-item"><div class="year">২০১৫-২০১৯</div><div><strong>বিএসসি ইন সিএসই</strong><br>টেক ইউনিভার্সিটি</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials : ছোট কার্ড -->
+    <section id="testimonials">
+      <div class="container">
+        <h2 class="section-title">ক্লায়েন্টের<span class="highlight"> মতামত</span></h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>এলেক্সের কাজ অত্যন্ত প্রফেশনাল। সময়মতো ডেলিভারি ও কোয়ালিটি অনবদ্য।</p><h4>- সারাহ চেন</h4></div>
+          <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>তার UI ডিজাইন আমাদের কনভার্সন রেট ৩ গুণ বাড়িয়েছে। অসাধারণ!</p><h4>- মার্কাস টেইলর</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact : মোবাইলে কলাম -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">যোগাযোগ<span class="highlight"> করুন</span></h2>
+        <div class="contact-wrapper">
+          <form id="contactForm">
+            <input type="text" placeholder="আপনার নাম" required>
+            <input type="email" placeholder="ইমেইল" required>
+            <textarea rows="4" placeholder="মেসেজ"></textarea>
+            <button type="submit" class="btn-primary full-width">পাঠিয়ে দিন <i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="contact-info">
+            <div><i class="fas fa-envelope"></i> alex@mobportfolio.com</div>
+            <div><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</div>
+            <div class="social"><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© ২০২৫ Alex Johnson | মোবাইল-ফ্রেন্ডলি পোর্টফোলিও</p>
+  </footer>
+  <div class="scroll-top" id="scrollTopBtn"><i class="fas fa-arrow-up"></i></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
